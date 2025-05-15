@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import MenuDisplay from './components/MenuDisplay'
 import ReservationForm from './components/ReservationForm'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Hero />
       <MenuDisplay />
       <ReservationForm />
+      <Footer /> 
     </div>
   )
 }
