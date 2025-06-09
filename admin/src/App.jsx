@@ -6,9 +6,10 @@ import ListMenu from './pages/ListMenu'
 import AdminTable from './pages/AdminTable'
 import { Routes, Route } from 'react-router-dom'
 import { ToastContainer } from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.css' // Tambahkan CSS toast
+import 'react-toastify/dist/ReactToastify.css' 
 
-export const backendUrl = 'http://localhost:7000';
+export const backendUrl = 'http://localhost:7000'
+export const currency = "$"
 
 const App = () => {
   const [token, setToken] = useState(localStorage.getItem('token') || ""); 

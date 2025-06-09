@@ -1,9 +1,9 @@
 import React, { useContext, useState } from 'react'
-import { ShopContext } from '../context/ShopContext'
+import { MenuContext } from '../context/MenuContext'
 import { categoryItem } from '../assets/assets'
 
 const MenuDisplay = () => {
-    const { products } = useContext(ShopContext)
+    const { products } = useContext(MenuContext)
     const [category, setCategory] = useState("All")
 
     return (
