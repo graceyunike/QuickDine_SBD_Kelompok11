@@ -12,8 +12,6 @@ import food11 from './drink2.png'
 import food12 from './pasta2.png'
 import food13 from './chicken.png'
 import food14 from './pizza2.png'
-
-
 import QuickDine_logo from './QuickDine_logo.png'
 
 export const categoryItem = [
