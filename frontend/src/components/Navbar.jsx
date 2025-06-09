@@ -9,11 +9,19 @@ const Navbar = () => {
             </div>
 
             <div>
-                <ul className= 'flex justify-between gap-8'>
-                    <li className= 'font-bold text-lg cursor-pointer hover:text-orange-500'>HOME</li>
-                    <li className= 'font-bold text-lg cursor-pointer hover:text-orange-500'>RESERVATIONS</li>
-                    <li className= 'font-bold text-lg cursor-pointer hover:text-orange-500'>MENU</li>
-                    <li className= 'font-bold text-lg cursor-pointer hover:text-orange-500'>CONTACT</li>
+                <ul className='flex justify-between gap-8'>
+                    <li>
+                        <a href="#home" className='font-bold text-lg cursor-pointer hover:text-orange-500'>HOME</a>
+                    </li>
+                    <li>
+                        <a href="#reservations" className='font-bold text-lg cursor-pointer hover:text-orange-500'>RESERVATIONS</a>
+                    </li>
+                    <li>
+                        <a href="#menu" className='font-bold text-lg cursor-pointer hover:text-orange-500'>MENU</a>
+                    </li>
+                    <li>
+                        <a href="#contact" className='font-bold text-lg cursor-pointer hover:text-orange-500'>CONTACT</a>
+                    </li>
                 </ul>
             </div>
         </nav>

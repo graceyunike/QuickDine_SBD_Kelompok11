@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import { backendUrl } from '../App'
 import { toast } from 'react-toastify'
-import axios from 'axios' // Tambahkan ini
+import axios from 'axios' 
 
-const Login = ({ setToken }) => { // Perbaiki parameter props
-    const [email, setEmail] = useState('') // Hapus spasi
-    const [password, setPassword] = useState('') // Hapus spasi
+const Login = ({ setToken }) => { 
+    const [email, setEmail] = useState('') 
+    const [password, setPassword] = useState('') 
 
     const OnSubmitHandler = async (e) => {
         try {

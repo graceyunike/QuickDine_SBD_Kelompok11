@@ -9,10 +9,16 @@ const App = () => {
   return (
     <div> 
       <Navbar />
-      <Hero />
-      <MenuDisplay />
-      <ReservationForm />
-      <Footer /> 
+        <Hero />
+        <div id="menu">
+          <MenuDisplay />
+        </div>
+        <div id="reservations">
+          <ReservationForm />
+        </div>
+        <div id="contact">
+          <Footer />
+        </div>
     </div>
   )
 }

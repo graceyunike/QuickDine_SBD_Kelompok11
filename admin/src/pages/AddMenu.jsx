@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import upload_img from '../assets/upload_img.png';
+import axios from 'axios';
+import { toast } from 'react-toastify'; 
+import { backendUrl } from '../App';
 
 const AddMenu = ({ token }) => {
     const [image, setImage] = useState(null); 
@@ -8,23 +11,56 @@ const AddMenu = ({ token }) => {
     const [price, setPrice] = useState("")
     const [category, setCategory] = useState("All")
 
+const OnSubmitHandler = async (e) => {
+        e.preventDefault();
+
+        try {
+        const formData = new FormData();
+        formData.append("name", name);
+        formData.append("description", description);
+        formData.append("price", price);
+        formData.append("category", category);
+        if (image) formData.append("image", image);
+
+        const response = await axios.post(`${backendUrl}/api/product/Add`, formData, {headers: {token}})
+        if (response.data.success) {
+            toast.success(response.data.message);
+            setName("")
+            setDescription("")
+            setPrice("")
+            setImage(null);
+
+        } else {
+            toast.error(response.data.message)
+        }
+        } catch (error) {
+            console.log(error);
+            toast.error("Something went wrong, please try again later.");
+        }
+
+    }
+
 
     return (
         <div>
-            <form>
-                <div className='flex flex-col items-start gap-1'>
+            <form onSubmit={OnSubmitHandler} className="flex flex-col items-start gap-1">
+                <div>
+                    <p>Upload Image</p>
                     <div>
-                        <p>Upload Image</p>
-                    </div>
                     <label htmlFor="image">
-                        <img src={!image ? upload_img : URL.createObjectURL(image)} alt="" className='w-32 cursor-pointer'/>
+                        <img 
+                        src={!image ? upload_img : URL.createObjectURL(image)} 
+                        alt="" 
+                        className="w-32 cursor-pointer" 
+                        />
                         <input 
-                            type="file" 
-                            id="image" 
-                            hidden 
-                            onChange={(e) => setImage(e.target.files[0])}
+                        onChange={(e) => setImage(e.target.files[0])} 
+                        type="file" 
+                        id="image" 
+                        hidden 
                         />
                     </label>
+                    </div>
                 </div>
 
                 <div className='w-full'>
