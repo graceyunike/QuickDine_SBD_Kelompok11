@@ -9,7 +9,7 @@
 |----------------------|------------|-------------------------------------|
 | Neyla Shakira        | 2306250655 | Membuat Backend dan README          |
 | Isyana Trevia Pohaci | 2306250592 | Membuat Admin Page dan Backend      |
-| Grace Yunike         | 2306267031 | Membuat Frontend dan Admin Page     |
+| Grace Yunike M. S.         | 2306267031 | Membuat Frontend, Admin Page dan README     |
 | Stevie Nathania      | 2306242382 | Membuat Backend dan README          |
 
 ---
@@ -91,43 +91,42 @@ Akses:
 
 ---
 
-## 7. 🧭 Cara Menggunakan Aplikasi
+## 7. 🧭 Cara Menggunakan QuickDine
 
-1. **Pelanggan scan QR code** yang terdapat di meja.
-2. Akses menu digital melalui browser atau aplikasi.
-3. **Login** (jika belum punya akun, daftar terlebih dahulu).
-4. **Pilih menu** makanan & minuman sesuai keinginan.
-5. **Kirim pesanan**, sistem mencatat dan mengirimkan ke dapur.
-6. **Pantau status pesanan** hingga selesai.
-7. Lakukan **pembayaran digital** setelah pesanan selesai.
+### 👥 Untuk Pelanggan:
 
-> Akun diperlukan untuk melakukan pemesanan dan pembayaran.
+1. **Akses aplikasi QuickDine** melalui QR code di meja atau link yang diberikan oleh restoran.
+2. **Lihat menu digital** secara lengkap, termasuk gambar, harga, dan kategori makanan/minuman.
+3. **Pilih menu** yang diinginkan dan tambahkan ke keranjang.
+4. **Kirim pesanan langsung** ke sistem dapur tanpa perlu menunggu pelayan.
+5. **Reservasi meja** juga dapat dilakukan langsung dari aplikasi (jika belum datang ke restoran).
+6. **Pantau status pesanan** secara real-time hingga pesanan selesai disiapkan.
+7. **Lakukan pembayaran digital** setelah pesanan selesai, sesuai instruksi dari restoran.
+
+### 🛠️ Untuk Admin / Pengelola Restoran:
+
+1. **Login ke dashboard admin** untuk mengakses sistem.
+2. **Kelola menu makanan & minuman** (tambah, ubah, atau hapus produk).
+3. **Pantau pesanan masuk** secara real-time dan terus perbarui statusnya.
+4. **Kelola reservasi pelanggan** dengan mudah melalui tabel reservasi.
+5. **Perbarui ketersediaan menu** atau status dapur sesuai operasional harian.
+
+
 
 ---
 
-## 8. 📁 Struktur Folder
+## 8. 📁 Page pada Website
 
-```
-QuickDine_SBD_Kelompok11/
-├── admin/
-├── backend/
-│   ├── config/
-│   ├── controllers/
-│   ├── middleware/
-│   ├── models/
-│   ├── routes/
-│   ├── server.js
-│   └── .env
-├── frontend/
-├── src/
-│   ├── index.html
-│   ├── App.jsx, dsb
-├── docker-compose.yml
-├── package.json
-├── vite.config.js
-└── README.md
-```
-
+### A. Login Page (Login as Admin)
+![Login Page](https://hackmd.io/_uploads/BJGf3bN7gg.jpg) 
+### B. Home Page
+![home page QuickDine](https://hackmd.io/_uploads/H1fkIW47xg.png)
+### C. Menu Page
+![Page Menu](https://hackmd.io/_uploads/B1oAvW47xl.png)
+### D. Reservation Page
+![Reservation Page](https://hackmd.io/_uploads/S1Fw_W4mlx.png)
+### E. Contact Page
+![Contact Page](https://hackmd.io/_uploads/ryUnO-4Qel.png)
 ---
 
 ## 9. 🔗 API Endpoint Penting
@@ -147,7 +146,6 @@ QuickDine_SBD_Kelompok11/
 **QuickDine** dikembangkan oleh:  
 **Kelompok 11 - Mata Kuliah Sistem Basis Data**  
 📅 Tahun Pembuatan: 2025  
-📄 Lisensi: © 2025 QuickDine Kelompok 11. All rights reserved.
 
 ---
 
